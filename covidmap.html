@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd040f85f3171e0ad11a529e34348783 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="Left" style="font-size:24px"><b>INDONESIA COVID-19 DASHBOARD 
+ Date : 25 December 2022</b></h3>
+             
+    
+            <div class="folium-map" id="map_fd040f85f3171e0ad11a529e34348783" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd040f85f3171e0ad11a529e34348783 = L.map(
+                "map_fd040f85f3171e0ad11a529e34348783",
+                {
+                    center: [1.6406296, 121.0793705],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e13bce5524b7f53e64f2af5e54fd55ad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+            var marker_ef633bfe5cb6347cfb3c562acf7faef5 = L.marker(
+                [4.695135, 96.7493993],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_a30015c2d2ce05f486f3d0a4fb8a7b80 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_51665eb2383674014a95735d4fb84497 = $(`<div id="html_51665eb2383674014a95735d4fb84497" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Aceh</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">44842</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">42515</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">2263</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">64</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_a30015c2d2ce05f486f3d0a4fb8a7b80.setContent(html_51665eb2383674014a95735d4fb84497);
+            
+        
+
+        marker_ef633bfe5cb6347cfb3c562acf7faef5.bindPopup(popup_a30015c2d2ce05f486f3d0a4fb8a7b80)
+        ;
+
+        
+    
+    
+            var marker_9017b3eb07cef88d75bf20ddd78baf56 = L.marker(
+                [-8.4095178, 115.188916],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_238ac96277a15d380603331cd399814d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_762ccbfa8c75248ca03cf30cf0372e21 = $(`<div id="html_762ccbfa8c75248ca03cf30cf0372e21" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Bali</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">172387</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">167356</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">4866</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">165</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_238ac96277a15d380603331cd399814d.setContent(html_762ccbfa8c75248ca03cf30cf0372e21);
+            
+        
+
+        marker_9017b3eb07cef88d75bf20ddd78baf56.bindPopup(popup_238ac96277a15d380603331cd399814d)
+        ;
+
+        
+    
+    
+            var marker_688ad34f598ec04c1fa57eef5dc6a85f = L.marker(
+                [-2.7410513, 106.4405872],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_0367b0d09f93e462839958d02aacd950 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c28a5ef563e877c2094c712b15ad86d2 = $(`<div id="html_c28a5ef563e877c2094c712b15ad86d2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Bangka Belitung Islands</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">67135</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">65405</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1651</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">79</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_0367b0d09f93e462839958d02aacd950.setContent(html_c28a5ef563e877c2094c712b15ad86d2);
+            
+        
+
+        marker_688ad34f598ec04c1fa57eef5dc6a85f.bindPopup(popup_0367b0d09f93e462839958d02aacd950)
+        ;
+
+        
+    
+    
+            var marker_2427eb82b4cc9cbe8213ba103184ccdc = L.marker(
+                [-6.4058172, 106.0640179],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_7d534528228b1d6610459151cb1a8a9a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c2e0e44d63cd748233882cf650124ef0 = $(`<div id="html_c2e0e44d63cd748233882cf650124ef0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Banten</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">364679</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">361040</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">2986</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">653</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_7d534528228b1d6610459151cb1a8a9a.setContent(html_c2e0e44d63cd748233882cf650124ef0);
+            
+        
+
+        marker_2427eb82b4cc9cbe8213ba103184ccdc.bindPopup(popup_7d534528228b1d6610459151cb1a8a9a)
+        ;
+
+        
+    
+    
+            var marker_52defc17562d62beb04bae6bc929ca66 = L.marker(
+                [-3.5778471, 102.3463875],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_1cb542e253fd0da368e84cf94c023103 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d3f8604852b3c613b5014ea667688054 = $(`<div id="html_d3f8604852b3c613b5014ea667688054" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Bengkulu</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">29838</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">29257</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">528</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">53</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_1cb542e253fd0da368e84cf94c023103.setContent(html_d3f8604852b3c613b5014ea667688054);
+            
+        
+
+        marker_52defc17562d62beb04bae6bc929ca66.bindPopup(popup_1cb542e253fd0da368e84cf94c023103)
+        ;
+
+        
+    
+    
+            var marker_928d4e9767cd44c2ad53b4f64897a06e = L.marker(
+                [-7.150975, 110.1402594],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_28c945e7866027d20d5d711dcc00ca22 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ae163a6c8cb464fc60a1135e322c0732 = $(`<div id="html_ae163a6c8cb464fc60a1135e322c0732" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Central Java</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">655026</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">617919</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">33956</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">3151</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_28c945e7866027d20d5d711dcc00ca22.setContent(html_ae163a6c8cb464fc60a1135e322c0732);
+            
+        
+
+        marker_928d4e9767cd44c2ad53b4f64897a06e.bindPopup(popup_28c945e7866027d20d5d711dcc00ca22)
+        ;
+
+        
+    
+    
+            var marker_dd107ac77da5dc2c49b53c0f7a83f4bd = L.marker(
+                [-1.6814878, 113.3823545],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_8ada09e09c40521a5d8c5a2550712d51 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e98f5bac51d33aa57b0895e73cf24c71 = $(`<div id="html_e98f5bac51d33aa57b0895e73cf24c71" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Central Kalimantan</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">59291</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">57683</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1555</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">53</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_8ada09e09c40521a5d8c5a2550712d51.setContent(html_e98f5bac51d33aa57b0895e73cf24c71);
+            
+        
+
+        marker_dd107ac77da5dc2c49b53c0f7a83f4bd.bindPopup(popup_8ada09e09c40521a5d8c5a2550712d51)
+        ;
+
+        
+    
+    
+            var marker_106b1fcae93caf0a33ebed02331430b3 = L.marker(
+                [-1.4300254, 121.4456179],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_d46e23ee3d4e575c8839943b726eb4e0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cf7f582577bfbd05952e7319b4b6fca8 = $(`<div id="html_cf7f582577bfbd05952e7319b4b6fca8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Central Sulawesi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">62894</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">60983</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1752</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">159</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_d46e23ee3d4e575c8839943b726eb4e0.setContent(html_cf7f582577bfbd05952e7319b4b6fca8);
+            
+        
+
+        marker_106b1fcae93caf0a33ebed02331430b3.bindPopup(popup_d46e23ee3d4e575c8839943b726eb4e0)
+        ;
+
+        
+    
+    
+            var marker_06aecee3a1054bed5be373e5f4d66975 = L.marker(
+                [-7.5360639, 112.2384017],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_7141ad479c0cf405fc13afd91773e70b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d52d4e383b27659bdba5c2f7e7305899 = $(`<div id="html_d52d4e383b27659bdba5c2f7e7305899" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">East Java</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">636284</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">603328</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">32224</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">732</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_7141ad479c0cf405fc13afd91773e70b.setContent(html_d52d4e383b27659bdba5c2f7e7305899);
+            
+        
+
+        marker_06aecee3a1054bed5be373e5f4d66975.bindPopup(popup_7141ad479c0cf405fc13afd91773e70b)
+        ;
+
+        
+    
+    
+            var marker_802d1f9c4616525188c366e260bb9460 = L.marker(
+                [1.6406296, 116.419389],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_03f5153eba54f1cf35e12423a9e58a4a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b7165c3c94bb4bbc88243f8fbe5a4cc8 = $(`<div id="html_b7165c3c94bb4bbc88243f8fbe5a4cc8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">East Kalimantan</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">214380</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">208517</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">5792</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">71</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_03f5153eba54f1cf35e12423a9e58a4a.setContent(html_b7165c3c94bb4bbc88243f8fbe5a4cc8);
+            
+        
+
+        marker_802d1f9c4616525188c366e260bb9460.bindPopup(popup_03f5153eba54f1cf35e12423a9e58a4a)
+        ;
+
+        
+    
+    
+            var marker_dedd5c2462095a924833190408d38569 = L.marker(
+                [-8.6573819, 121.0793705],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_2d0ce826e86bc691fc5113a6fee3d23e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2bac0a362f29dd0a59459f1e9765458b = $(`<div id="html_2bac0a362f29dd0a59459f1e9765458b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">East Nusa Tenggara</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">97167</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">95485</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1564</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">118</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_2d0ce826e86bc691fc5113a6fee3d23e.setContent(html_2bac0a362f29dd0a59459f1e9765458b);
+            
+        
+
+        marker_dedd5c2462095a924833190408d38569.bindPopup(popup_2d0ce826e86bc691fc5113a6fee3d23e)
+        ;
+
+        
+    
+    
+            var marker_51821a3d89af8e380308e84770bca46d = L.marker(
+                [0.6999371999999999, 122.4467238],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_fc022faba0531e30cd315178d605b1af = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1e2520fb68132c2e5a526a3727788ccc = $(`<div id="html_1e2520fb68132c2e5a526a3727788ccc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Gorontalo</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">14078</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">13463</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">486</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">129</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_fc022faba0531e30cd315178d605b1af.setContent(html_1e2520fb68132c2e5a526a3727788ccc);
+            
+        
+
+        marker_51821a3d89af8e380308e84770bca46d.bindPopup(popup_fc022faba0531e30cd315178d605b1af)
+        ;
+
+        
+    
+    
+            var marker_5bad2570b9c37a5fb9e131b4f710c17e = L.marker(
+                [-6.211544, 106.845172],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_665581ed32b8303c9a897523611de2a6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_354e80f72eb2a960ecd9f4d5a559cf65 = $(`<div id="html_354e80f72eb2a960ecd9f4d5a559cf65" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Jakarta</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">1535053</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">1517065</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">15889</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">2099</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_665581ed32b8303c9a897523611de2a6.setContent(html_354e80f72eb2a960ecd9f4d5a559cf65);
+            
+        
+
+        marker_5bad2570b9c37a5fb9e131b4f710c17e.bindPopup(popup_665581ed32b8303c9a897523611de2a6)
+        ;
+
+        
+    
+    
+            var marker_e1510fc24549e71b5ea7ac70579e6544 = L.marker(
+                [-1.4851831, 102.4380581],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_d6be08ee2e42e8106e5cd5134391c66f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d8e106be8981836489b2ae8c80536172 = $(`<div id="html_d8e106be8981836489b2ae8c80536172" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Jambi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">39394</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">38434</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">913</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">47</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_d6be08ee2e42e8106e5cd5134391c66f.setContent(html_d8e106be8981836489b2ae8c80536172);
+            
+        
+
+        marker_e1510fc24549e71b5ea7ac70579e6544.bindPopup(popup_d6be08ee2e42e8106e5cd5134391c66f)
+        ;
+
+        
+    
+    
+            var marker_ee1f92efa0d2fdc455fdde9f3c114121 = L.marker(
+                [-4.5585849, 105.4068079],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_fcad5f7b1e449fdc820ba6c915a0a7ee = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_09f4854547997cda822f39bd738fe031 = $(`<div id="html_09f4854547997cda822f39bd738fe031" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Lampung</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">77999</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">73431</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">4229</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">339</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_fcad5f7b1e449fdc820ba6c915a0a7ee.setContent(html_09f4854547997cda822f39bd738fe031);
+            
+        
+
+        marker_ee1f92efa0d2fdc455fdde9f3c114121.bindPopup(popup_fcad5f7b1e449fdc820ba6c915a0a7ee)
+        ;
+
+        
+    
+    
+            var marker_88441c2a86f2d26b8bc95824eebdc970 = L.marker(
+                [-3.2384616, 130.1452734],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_0a218f3a70ec5b035bf88d52dac4cc26 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fa76c377eba0457123559d54b0ee39ff = $(`<div id="html_fa76c377eba0457123559d54b0ee39ff" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Maluku</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">18985</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">18667</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">305</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">13</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_0a218f3a70ec5b035bf88d52dac4cc26.setContent(html_fa76c377eba0457123559d54b0ee39ff);
+            
+        
+
+        marker_88441c2a86f2d26b8bc95824eebdc970.bindPopup(popup_0a218f3a70ec5b035bf88d52dac4cc26)
+        ;
+
+        
+    
+    
+            var marker_3de0606e0e13f32e510ee9874b958640 = L.marker(
+                [1.5709993, 127.8087693],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_9ff1c510070b8a5cf41f93e06383260f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bb884c5d7e82db3a6d71f347c69b7e1f = $(`<div id="html_bb884c5d7e82db3a6d71f347c69b7e1f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">North Kalimantan</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">46137</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">45249</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">874</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">14</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_9ff1c510070b8a5cf41f93e06383260f.setContent(html_bb884c5d7e82db3a6d71f347c69b7e1f);
+            
+        
+
+        marker_3de0606e0e13f32e510ee9874b958640.bindPopup(popup_9ff1c510070b8a5cf41f93e06383260f)
+        ;
+
+        
+    
+    
+            var marker_6e2e0dc916f6f76c047ec5c24fa66ad5 = L.marker(
+                [1.5802128, 114.0308546],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_88946e41e99dc8966a1b2cbeb7863050 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_302c9bdafa900ba73784db02efd49743 = $(`<div id="html_302c9bdafa900ba73784db02efd49743" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">North Maluku</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">14867</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">14485</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">335</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">47</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_88946e41e99dc8966a1b2cbeb7863050.setContent(html_302c9bdafa900ba73784db02efd49743);
+            
+        
+
+        marker_6e2e0dc916f6f76c047ec5c24fa66ad5.bindPopup(popup_88946e41e99dc8966a1b2cbeb7863050)
+        ;
+
+        
+    
+    
+            var marker_2b1ce5bbf33b680f57037b947519305d = L.marker(
+                [0.6246932, 123.9750018],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_ce5e5cab9c051b735c610b7acec5c40c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e67751d792e3384954f2ea6109999aa1 = $(`<div id="html_e67751d792e3384954f2ea6109999aa1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">North Sulawesi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">54339</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">52865</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1258</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">216</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_ce5e5cab9c051b735c610b7acec5c40c.setContent(html_e67751d792e3384954f2ea6109999aa1);
+            
+        
+
+        marker_2b1ce5bbf33b680f57037b947519305d.bindPopup(popup_ce5e5cab9c051b735c610b7acec5c40c)
+        ;
+
+        
+    
+    
+            var marker_84573244c8d759c7cacd26e76f40e642 = L.marker(
+                [2.1153547, 99.5450974],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_991bd6e6810146b7663b9fe4d6b28583 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b8d56f2ec702e20957f4ce37b97e9585 = $(`<div id="html_b8d56f2ec702e20957f4ce37b97e9585" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">North Sumatra</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">163512</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">159852</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">3377</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">283</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_991bd6e6810146b7663b9fe4d6b28583.setContent(html_b8d56f2ec702e20957f4ce37b97e9585);
+            
+        
+
+        marker_84573244c8d759c7cacd26e76f40e642.bindPopup(popup_991bd6e6810146b7663b9fe4d6b28583)
+        ;
+
+        
+    
+    
+            var marker_b6111ebc771468a0069cb4790598b824 = L.marker(
+                [-4.269928, 138.0803529],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_4cb00ee83809dfa3bac7dcc1a1c9021a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fbbf13c85653dd58ca2d93272381f9cc = $(`<div id="html_fbbf13c85653dd58ca2d93272381f9cc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Papua</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">51182</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">50484</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">580</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">118</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_4cb00ee83809dfa3bac7dcc1a1c9021a.setContent(html_fbbf13c85653dd58ca2d93272381f9cc);
+            
+        
+
+        marker_b6111ebc771468a0069cb4790598b824.bindPopup(popup_4cb00ee83809dfa3bac7dcc1a1c9021a)
+        ;
+
+        
+    
+    
+            var marker_c2cca0ec2c8b656028f584b1e263d43a = L.marker(
+                [0.2933468999999999, 101.7068294],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_ee16bfc253e0a6ab146d433d00fe2455 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_51b3493b36da761fc3c8513ff189ed39 = $(`<div id="html_51b3493b36da761fc3c8513ff189ed39" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Riau</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">154848</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">150214</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">4541</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">93</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_ee16bfc253e0a6ab146d433d00fe2455.setContent(html_51b3493b36da761fc3c8513ff189ed39);
+            
+        
+
+        marker_c2cca0ec2c8b656028f584b1e263d43a.bindPopup(popup_ee16bfc253e0a6ab146d433d00fe2455)
+        ;
+
+        
+    
+    
+            var marker_397b1aad198860dff956bea7eae6716e = L.marker(
+                [3.9456514, 108.1428669],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_c1d2fa38bf967c623a677ff7ec91d57c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ecc413614e804b41db34ee9d73abe8d8 = $(`<div id="html_ecc413614e804b41db34ee9d73abe8d8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Riau Islands</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">71993</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">69989</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1927</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">77</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_c1d2fa38bf967c623a677ff7ec91d57c.setContent(html_ecc413614e804b41db34ee9d73abe8d8);
+            
+        
+
+        marker_397b1aad198860dff956bea7eae6716e.bindPopup(popup_c1d2fa38bf967c623a677ff7ec91d57c)
+        ;
+
+        
+    
+    
+            var marker_07a331a9bdf7f6990d8f91a53435e182 = L.marker(
+                [-3.0926415, 115.2837585],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_1b65c9bd4c26b95357f5f48bedfbfbcc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_aad75caebb41b5b95d2dd2359ce73b3c = $(`<div id="html_aad75caebb41b5b95d2dd2359ce73b3c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">South Kalimantan</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">88870</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">86152</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">2599</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">119</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_1b65c9bd4c26b95357f5f48bedfbfbcc.setContent(html_aad75caebb41b5b95d2dd2359ce73b3c);
+            
+        
+
+        marker_07a331a9bdf7f6990d8f91a53435e182.bindPopup(popup_1b65c9bd4c26b95357f5f48bedfbfbcc)
+        ;
+
+        
+    
+    
+            var marker_4fc7cb4aad95785fc66948c6b9509472 = L.marker(
+                [-3.6687994, 119.9740534],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_2563fb0dc83dfe94324a805ce6068c54 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0f32bef4a15198daeb9d426e408629fa = $(`<div id="html_0f32bef4a15198daeb9d426e408629fa" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">South Sulawesi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">148491</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">145844</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">2571</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">76</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_2563fb0dc83dfe94324a805ce6068c54.setContent(html_0f32bef4a15198daeb9d426e408629fa);
+            
+        
+
+        marker_4fc7cb4aad95785fc66948c6b9509472.bindPopup(popup_2563fb0dc83dfe94324a805ce6068c54)
+        ;
+
+        
+    
+    
+            var marker_c740bba014861ef17313b654d2a3007f = L.marker(
+                [-3.3194374, 103.914399],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_63d95c6e79227e8ad70275847f366919 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_25c89b4619b16eea75d7aefa53d2aa84 = $(`<div id="html_25c89b4619b16eea75d7aefa53d2aa84" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">South Sumatra</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">85008</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">81398</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">3455</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">155</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_63d95c6e79227e8ad70275847f366919.setContent(html_25c89b4619b16eea75d7aefa53d2aa84);
+            
+        
+
+        marker_c740bba014861ef17313b654d2a3007f.bindPopup(popup_63d95c6e79227e8ad70275847f366919)
+        ;
+
+        
+    
+    
+            var marker_206594f8492ab5292b298f8c10fe2fc6 = L.marker(
+                [-4.14491, 122.174605],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_1c725aca63443d973b56d8eb928331a4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_335d2c06d51a01cf577993dcedfb3e29 = $(`<div id="html_335d2c06d51a01cf577993dcedfb3e29" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Southeast Sulawesi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">26556</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">25925</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">585</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">46</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_1c725aca63443d973b56d8eb928331a4.setContent(html_335d2c06d51a01cf577993dcedfb3e29);
+            
+        
+
+        marker_206594f8492ab5292b298f8c10fe2fc6.bindPopup(popup_1c725aca63443d973b56d8eb928331a4)
+        ;
+
+        
+    
+    
+            var marker_2f66d39922f31ad9fc1727cacf8a0a73 = L.marker(
+                [-7.8753849, 110.4262088],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_8a3d07606cf6bce105daa7412c2aa2c1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4542888837447dcc44974a448c8bc807 = $(`<div id="html_4542888837447dcc44974a448c8bc807" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Special Region of Yogyakarta</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">230005</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">223228</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">6072</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">705</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_8a3d07606cf6bce105daa7412c2aa2c1.setContent(html_4542888837447dcc44974a448c8bc807);
+            
+        
+
+        marker_2f66d39922f31ad9fc1727cacf8a0a73.bindPopup(popup_8a3d07606cf6bce105daa7412c2aa2c1)
+        ;
+
+        
+    
+    
+            var marker_02e7370da1df5bc4fcfc7d19936bd2e5 = L.marker(
+                [-7.090911, 107.668887],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_2bec539206e9081b5f00d4ac4a50bb05 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ff52ec3eae376360cd28538c3d0eed15 = $(`<div id="html_ff52ec3eae376360cd28538c3d0eed15" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Java</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">1231522</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">1205494</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">16090</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">9938</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_2bec539206e9081b5f00d4ac4a50bb05.setContent(html_ff52ec3eae376360cd28538c3d0eed15);
+            
+        
+
+        marker_02e7370da1df5bc4fcfc7d19936bd2e5.bindPopup(popup_2bec539206e9081b5f00d4ac4a50bb05)
+        ;
+
+        
+    
+    
+            var marker_f9ff44f7f3551c4194eec0510405fd37 = L.marker(
+                [-0.2787808, 111.4752851],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_6d755e9414e3a35068c260e4c03d6cd8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_56f56e8a8f7311b64c44aa8149010d7b = $(`<div id="html_56f56e8a8f7311b64c44aa8149010d7b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Kalimantan</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">67451</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">66178</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">1146</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">127</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_6d755e9414e3a35068c260e4c03d6cd8.setContent(html_56f56e8a8f7311b64c44aa8149010d7b);
+            
+        
+
+        marker_f9ff44f7f3551c4194eec0510405fd37.bindPopup(popup_6d755e9414e3a35068c260e4c03d6cd8)
+        ;
+
+        
+    
+    
+            var marker_a1c6b08a161bba3e8803177b4dce89c8 = L.marker(
+                [-8.6529334, 117.3616476],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_e25fb755a7b91bbac2141d8d8b01de6b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f184c8070c2aadf09e054cd2285a1af2 = $(`<div id="html_f184c8070c2aadf09e054cd2285a1af2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Nusa Tenggara</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">37266</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">36271</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">933</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">62</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_e25fb755a7b91bbac2141d8d8b01de6b.setContent(html_f184c8070c2aadf09e054cd2285a1af2);
+            
+        
+
+        marker_a1c6b08a161bba3e8803177b4dce89c8.bindPopup(popup_e25fb755a7b91bbac2141d8d8b01de6b)
+        ;
+
+        
+    
+    
+            var marker_0d8acc49203d501963ca4b068be6976a = L.marker(
+                [-1.3361154, 133.1747162],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_2ef7dc65668d948c4ac6934e40b4e6f3 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c17f714301a58e8afe60f142001a95dd = $(`<div id="html_c17f714301a58e8afe60f142001a95dd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Papua</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">32972</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">32515</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">393</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">64</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_2ef7dc65668d948c4ac6934e40b4e6f3.setContent(html_c17f714301a58e8afe60f142001a95dd);
+            
+        
+
+        marker_0d8acc49203d501963ca4b068be6976a.bindPopup(popup_2ef7dc65668d948c4ac6934e40b4e6f3)
+        ;
+
+        
+    
+    
+            var marker_6d5004ac1b8ffcd7bd6090de893c9159 = L.marker(
+                [-2.8441371, 119.2320784],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_7496f2a6a781dae92fa448846b53f126 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_aa73e246397c5ff2b2b4a0d796529e0e = $(`<div id="html_aa73e246397c5ff2b2b4a0d796529e0e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Sulawesi</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">16038</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">15619</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">407</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">12</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_7496f2a6a781dae92fa448846b53f126.setContent(html_aa73e246397c5ff2b2b4a0d796529e0e);
+            
+        
+
+        marker_6d5004ac1b8ffcd7bd6090de893c9159.bindPopup(popup_7496f2a6a781dae92fa448846b53f126)
+        ;
+
+        
+    
+    
+            var marker_e577888374801014748a6268c661b15c = L.marker(
+                [-0.7399397, 100.8000051],
+                {}
+            ).addTo(map_fd040f85f3171e0ad11a529e34348783);
+        
+    
+        var popup_e90c049c18be734d76e13ece359c1ea8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8e747a4fa257837fc9ebc88db3b57d69 = $(`<div id="html_8e747a4fa257837fc9ebc88db3b57d69" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">West Sumatra</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Total Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">105635</td> </tr> <tr> <td style="background-color: #2BF61D;"><span style="color: #ffffff;">Total Recoveries</span></td> <td style="width: 150px;background-color: #f2f0d3;">103046</td> </tr> <tr> <td style="background-color: #FF0000;"><span style="color: #ffffff;">Total Deaths</span></td> <td style="width: 150px;background-color: #f2f0d3;">2420</td> </tr> <tr> <td style="background-color: #FCD01F;"><span style="color: #ffffff;">Active Case</span></td> <td style="width: 150px;background-color: #f2f0d3;">169</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_e90c049c18be734d76e13ece359c1ea8.setContent(html_8e747a4fa257837fc9ebc88db3b57d69);
+            
+        
+
+        marker_e577888374801014748a6268c661b15c.bindPopup(popup_e90c049c18be734d76e13ece359c1ea8)
+        ;
+
+        
+    
+</script>
+</html>
